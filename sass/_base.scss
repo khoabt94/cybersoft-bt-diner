@@ -1,0 +1,117 @@
+:root {
+    --primary-color: #ff6600;
+    --secondary-color: #ffc600;
+
+    --font-color: rgba(22, 28, 45, 0.7);
+    --footer-color: #a5a2a1;
+    --heading-color: #232121;
+
+    --bg-color: #fff;
+    --bg-light: rgba(130, 115, 252, .05);
+    --bg-grey: #f7f7f7;
+    --footer-bg: #000;
+    --card-bg: #fff;
+    --nav-color: #232121;
+    --dropdown-color: #fff;
+
+    --border-radius: 6px;
+    --border-radius-full: 35px;
+    --border-color-light: #eee;
+
+    --font-normal: 'Quicksand', sans-serif;
+    --font-special: 'Pacifico', cursive;
+}
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;   // 1000px
+$bp-medium: 50em;    // 800px;
+$bp-small: 37.5em;    // 600px;
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+
+    @media (max-width: $bp-large) {
+        font-size: 56.25%;
+    }
+
+    @media (max-width: $bp-medium) {
+        font-size: 50%;
+    }
+}
+
+body {
+    box-sizing: border-box;
+    font-weight: 400;
+    color: var(--font-color);
+    line-height: 1.2;
+    font-family: var(--font-normal);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn {
+    padding: 1.2rem 4.5rem;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    font-weight: 700;
+    transition: all .3s ease-in;
+    border-radius: var(--border-radius);
+    display: inline-block;
+
+    &--white {
+        background-color: transparent;
+        border: 2px solid #fff;
+        color: #fff;
+
+        &:hover {
+            background-color: #fff;
+            color: var(--primary-color);
+        }
+    }
+
+    &--orange {
+        background-color: var(--primary-color);
+        color: #fff;
+        border: 2px solid var(--primary-color);
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+.mb-10 {margin-bottom: 1.0rem !important}
+.mb-16 {margin-bottom: 1.6rem !important}
+.mb-24 {margin-bottom: 2.4rem !important}
+.mb-48 {margin-bottom: 4.8rem !important}
+
+.text-white {color: #fff !important}
+.text-center {text-align: center !important}
+
+@mixin centerCell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin darkBackground {
+    background-color: rgba(16, 15, 19, .66);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: color;
+}

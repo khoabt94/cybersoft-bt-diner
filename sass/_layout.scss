@@ -1,0 +1,223 @@
+///////////////////////////////////////////////////////////
+// GENERAL CLASSES
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+
+}
+
+.grid {
+    display: grid;
+}
+
+.grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+///////////////////////////////////////////////////////////
+// HEADER
+.header {
+    height: 75vh;
+    background-image: linear-gradient(to right, var(--primary-color), rgba(5,3,0, .2)), url('../img/banner1.jpg');
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-attachment: fixed;
+    background-size: cover;
+
+    @media (max-width: $bp-large) {
+        background-position: center;
+    }
+
+    @media (max-width: $bp-small) {
+        height: 60vh;
+    }
+
+}
+
+///////////////////////////////////////////////////////////
+// NAV
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+///////////////////////////////////////////////////////////
+// HERO
+.hero {
+    margin-top: 10rem;
+    
+    @media (max-width: $bp-largest) {
+        padding: 0 4.8rem;
+    }
+
+    @media (max-width: $bp-large) {
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+///////////////////////////////////////////////////////////
+// ABOUT
+.about {
+    padding: 9.6rem 0;
+
+    &__container {
+        grid-template-columns: 4fr 6fr;
+
+        @media (max-width: $bp-largest) {
+            padding: 4.8rem;
+        }
+
+        @media (max-width: $bp-large) {
+            grid-template-columns: 1fr;
+            row-gap: 4.8rem;
+            padding: 4.8rem;
+        }
+    }
+}
+
+///////////////////////////////////////////////////////////
+// BOOK
+.book {
+    align-items: stretch;
+
+    @media (max-width: $bp-large) {
+        grid-template-columns: 1fr;
+    }
+}
+
+///////////////////////////////////////////////////////////
+// NEW
+.new {
+    padding: 9.6rem 0;
+    background-color: var(--bg-grey);
+}
+
+.cates {
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+///////////////////////////////////////////////////////////
+// MEALS
+.meals {
+    padding: 9.6rem 0;
+
+    &__container {
+        grid-gap: 3rem;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    }
+}
+
+///////////////////////////////////////////////////////////
+// CTA
+.cta {
+    padding: 12rem 0 15rem 0;
+    background-image: url('../img/banner3.jpg');
+    @include darkBackground;
+}
+
+///////////////////////////////////////////////////////////
+// STAT
+.stats {
+    background-color: transparent;
+    position: relative;
+    top: -8rem;
+
+    @media (max-width: $bp-large) {
+        top: 3.2rem;
+        margin-bottom: 9.6rem;
+    }
+
+    &__container {
+        column-gap: 3rem;
+        row-gap: 3rem;
+
+        @media (max-width: $bp-medium) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+    }
+}
+
+///////////////////////////////////////////////////////////
+// VIDEO
+.video {
+    padding-top: 2rem;
+    padding-bottom: 9rem;
+
+    &__container {
+        min-height: 500px;
+        margin: 0 auto;
+        background-image: url('../img/banner4.jpg');
+        @include darkBackground;
+        @include centerCell;
+        border-radius: var(--border-radius);
+
+        @media (max-width: $bp-largest) {
+            max-width: 80%;
+        }
+        
+        @media (max-width: $bp-medium) {
+            max-width: 70%;
+        }
+    }
+
+}
+
+///////////////////////////////////////////////////////////
+// POST
+.posts {
+    padding: 9.6rem 0;
+    background-color: var(--bg-grey);
+
+    &__container {
+        column-gap: 3rem;
+        row-gap: 6rem;
+        grid-template-columns: repeat(auto-fill, minmax(33rem, 1fr));
+    }
+}
+
+///////////////////////////////////////////////////////////
+// TESTI
+.testi {
+    padding: 9.6rem 0;
+
+
+}
+
+///////////////////////////////////////////////////////////
+// FOOTER
+.footer {
+    background-color: var(--footer-bg);
+    
+    &__body {
+        padding: 7.2rem 0;
+        grid-template-columns: 2fr 1fr 1fr 2fr;
+        column-gap: 6rem;
+        row-gap: 6rem;
+
+        @media (max-width: $bp-large) {
+            grid-template-columns: 1fr 1fr;
+            padding: 7.2rem 3.2rem;
+        }
+
+    }
+
+    &__copy {
+        padding: 2rem 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+}

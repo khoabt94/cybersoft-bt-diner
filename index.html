@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Link typo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Dinner Restaurant Category</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <!-- Nav -->
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Diner</a>
+            <div class="nav__list">
+                <div class="nav__search">
+                    <input type="text" class="nav__search-input" placeholder="Search here...">
+                    <i class="nav__search-icon fa-solid fa-magnifying-glass"></i>
+                </div>
+                <i class="nav__theme nav__theme--dark fa-solid fa-moon"></i>
+                <i class="fa-solid nav__theme nav__theme--light fa-sun"></i>
+                <i class="nav__bar fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <!-- Nav Bar -->
+        <div class="navbar">
+            <div class="navbar__close-box">
+                <i class="fa-solid navbar__close-icon fa-xmark"></i>
+            </div>
+            <ul class="navbar__list">
+                <li class="navbav__item"><a href="#" class="navbar__link">Home</a></li>
+                <li class="navbav__item"><a href="#" class="navbar__link">About</a></li>
+                <li class="navbav__item"><a href="#" class="navbar__link">Services</a></li>
+                <li class="navbav__item"><a href="#" class="navbar__link">Blog</a></li>
+                <li class="navbav__item"><a href="#" class="navbar__link">404</a></li>
+                <li class="navbav__item"><a href="#" class="navbar__link">Landing Page</a></li>
+                <li class="navbav__item"><a href="#" class="navbar__link">Contact</a></li>
+                <li class="navbav__item"><a href="#" class="navbar__link">Shot Codes</a></li>
+                <li class="navbav__item"><a href="#" class="navbar__link">Email</a></li>
+            </ul>
+        </div>
+
+        <!-- Hero -->
+        <section class="hero container grid grid--2-cols">
+            <div class="hero__container">
+                <h1 class="hero__heading heading--1 mb-24">The Only Thing We Love More Than Food Is You!</h1>
+                <p class="hero__text mb-48">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.Ea ipsum sed consequuntur illum facere.</p>
+                <a href="#" class="btn btn--white">
+                    Read More
+                    <i class="btn-icon fa-solid fa-chevron-right"></i>
+                </a>
+            </div>
+        </section>
+    </header>
+
+    <!-- About -->
+    <section class="about">
+        <div class="about__container container grid">
+            <div class="about__heading">
+                <h4 class="heading--4">About Us</h4>
+                <h3 class="heading--3">We found our creative space that is open for you.</h3>
+            </div>
+            <div class="about__text">
+                <p class="paragraph mb-10">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet. Lorem ipsum init dolor sit, amet elit. Dolor ipsum non velit, culpa!Lorem ipsum init dolor sit.</p>
+                <p class="paragraph">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book -->
+    <section class="book grid grid--2-cols">
+        <div class="book__img-box">&nbsp;</div>
+        <div class="book__desc">
+            <h4 class="heading--4 text-white">More than 3000 Restaurants</h4>
+            <h3 class="heading--3 mb-16">Book a table easly at the best price</h3>
+            <p class="paragraph text-white">Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales quis. Integer sit amet mattis quam.Vivamus a ligula quam tesque et libero ut justo ultrices in.</p>
+            <div class="bests grid grid--2-cols">
+                <div class="best">
+                    <div class="best__icon-box mb-24">
+                        <i class="best__icon fa-solid fa-thumbs-up"></i>
+                    </div>
+                    <p class="best__heading">Best Deals</p>
+                    <p class="paragraph text-white">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                </div>
+                <div class="best">
+                    <div class="best__icon-box mb-24">
+                        <i class="best__icon fa-solid fa-utensils"></i>
+                    </div>
+                    <p class="best__heading">Best Food</p>
+                    <p class="paragraph text-white">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- New -->
+    <section class="new">
+        <div class="container">
+            <h4 class="heading--4 text-center">What's New</h4>
+            <h3 class="heading--3 text-center mb-48">Popular Categories</h3>
+        </div>
+        <div class="cates container grid">
+            <div class="cate">
+                <img src="./img/cate1.jpg" alt="" class="cate__img">
+                <div class="cate__desc">
+                    <p class="cate__title">Vegetarian</p>
+                    <p class="cate__price">$350</p>
+                </div>
+            </div>
+            <div class="cate">
+                <img src="./img/cate2.jpg" alt="" class="cate__img">
+                <div class="cate__desc">
+                    <p class="cate__title">Drink</p>
+                    <p class="cate__price">$550</p>
+                </div>
+            </div>
+            <div class="cate">
+                <img src="./img/cate3.jpg" alt="" class="cate__img">
+                <div class="cate__desc">
+                    <p class="cate__title">Lunch</p>
+                    <p class="cate__price">$650</p>
+                </div>
+            </div>
+            <div class="cate">
+                <img src="./img/cate4.jpg" alt="" class="cate__img">
+                <div class="cate__desc">
+                    <p class="cate__title">Bakery</p>
+                    <p class="cate__price">$550</p>
+                </div>
+            </div>
+            <div class="cate">
+                <img src="./img/cate5.jpg" alt="" class="cate__img">
+                <div class="cate__desc">
+                    <p class="cate__title">Desserts</p>
+                    <p class="cate__price">$750</p>
+                </div>
+            </div>
+            <div class="cate">
+                <img src="./img/cate6.jpg" alt="" class="cate__img">
+                <div class="cate__desc">
+                    <p class="cate__title">Pizza</p>
+                    <p class="cate__price">$850</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Meal -->
+    <section class="meals">
+        <div class="meals__container container grid">
+            <div class="meal grid">
+                <div class="meal__icon-box">
+                    <i class="meal__icon fa-solid fa-users"></i>
+                </div>
+                <div class="meal__heading">
+                    <p class="meal__num paragraph">01</p>
+                    <p class="meal__title">Soup</p>
+                </div>
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligend vitae sit.</p>
+            </div>
+            <div class="meal grid">
+                <div class="meal__icon-box">
+                    <i class="meal__icon fa-solid fa-shield"></i>
+                </div>
+                <div class="meal__heading">
+                    <p class="meal__num paragraph">02</p>
+                    <p class="meal__title">Drinks</p>
+                </div>
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligend vitae sit.</p>
+            </div>
+            <div class="meal grid">
+                <div class="meal__icon-box">
+                    <i class="meal__icon fa-solid fa-temperature-full"></i>
+                </div>
+                <div class="meal__heading">
+                    <p class="meal__num paragraph">03</p>
+                    <p class="meal__title">Pizza</p>
+                </div>
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligend vitae sit.</p>
+            </div>
+            <div class="meal grid">
+                <div class="meal__icon-box">
+                    <i class="meal__icon fa-solid fa-hands-asl-interpreting"></i>
+                </div>
+                <div class="meal__heading">
+                    <p class="meal__num paragraph">04</p>
+                    <p class="meal__title">Breakfast</p>
+                </div>
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligend vitae sit.</p>
+            </div>
+            <div class="meal grid">
+                <div class="meal__icon-box">
+                    <i class="meal__icon fa-solid fa-paintbrush"></i>
+                </div>
+                <div class="meal__heading">
+                    <p class="meal__num paragraph">05</p>
+                    <p class="meal__title">Lunch</p>
+                </div>
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligend vitae sit.</p>
+            </div>
+            <div class="meal grid">
+                <div class="meal__icon-box">
+                    <i class="meal__icon fa-solid fa-eraser"></i>
+                </div>
+                <div class="meal__heading">
+                    <p class="meal__num paragraph">06</p>
+                    <p class="meal__title">Dinner</p>
+                </div>
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligend vitae sit.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <h3 class="heading--3 text-white mb-48 text-center">Deliciousness jumping into <br> the mouth.</h3>
+            <div class="cta__btn text-center">
+                <a href="#" class="btn btn--white">
+                    Read More
+                    <i class="btn-icon fa-solid fa-chevron-right"></i>
+                </a>
+                <a href="#" class="btn btn--orange">
+                    Contact Us
+                    <i class="btn-icon fa-solid fa-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stat -->
+    <section class="stats">
+        <div class="stats__container container grid grid--4-cols">
+            <div class="stat">
+                <div class="stat__icon-box">
+                    <i class="stat__icon fa-solid fa-building"></i>
+                </div>
+                <span class='stat__num numscroller' data-min='1' data-max='15100' data-delay='4' data-increment='10'>15,100</span>
+                <p class="stat__title">Branches</p>
+            </div>
+            <div class="stat">
+                <div class="stat__icon-box">
+                    <i class="stat__icon fa-solid fa-utensils"></i>
+                </div>
+                <span class='stat__num numscroller' data-min='1' data-max='19256' data-delay='4' data-increment='10'>19,256</span>
+                <p class="stat__title">Food Items</p>
+            </div>
+            <div class="stat">
+                <div class="stat__icon-box">
+                    <i class="stat__icon fa-solid fa-users"></i>
+                </div>
+                <span class='stat__num numscroller' data-min='1' data-max='12100' data-delay='4' data-increment='10'>12,100</span>
+                <p class="stat__title">Chefs</p>
+            </div>
+            <div class="stat">
+                <div class="stat__icon-box">
+                    <i class="stat__icon fa-solid fa-face-grin"></i>
+                </div>
+                <span class='stat__num numscroller' data-min='1' data-max='2560' data-delay='4' data-increment='10'>2,560</span>
+                <p class="stat__title">Happy Customers</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video -->
+    <section class="video">
+        <div class="container">
+            <div class="video__container">
+                <div class="video__icon-box">
+                    <i class="video__icon fa-solid fa-play"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Post -->
+    <section class="posts">
+        <div class="container">
+            <h4 class="heading--4 text-center">Latest Posts</h4>
+            <h3 class="heading--3 text-center mb-48">Blog Posts</h3>
+        </div>
+        <div class="posts__container container grid">
+            <div class="post">
+                <div class="post__img post__img--1">
+                    <div class="post__tag">
+                        <span class="post__tag-cate">Reciepe</span>
+                        <span class="post__tag-time">
+                            <i class="post__tag-icon fa-solid fa-clock"></i>
+                            10 Min Cook
+                        </span>
+                    </div>
+                </div>
+                <div class="post__body">
+                    <p class="post__title">The best cookie recipes to bake this weekend</p>
+                    <p class="post__text paragraph">Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit</p>
+                </div>
+                <div class="post__footer">
+                    <img src="./img/user1.jpg" alt="" class="post__footer-img">
+                    <p class="post__footer-user">Rashed Kabir</p>
+                    <p class="post__footer-read">
+                        Read More
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </p>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post__img post__img--2">
+                    <div class="post__tag">
+                        <span class="post__tag-cate">Soup</span>
+                        <span class="post__tag-time">
+                            <i class="post__tag-icon fa-solid fa-clock"></i>
+                            10 Min Cook
+                        </span>
+                    </div>
+                </div>
+                <div class="post__body">
+                    <p class="post__title">The best cookie recipes to bake this weekend</p>
+                    <p class="post__text paragraph">Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit</p>
+                </div>
+                <div class="post__footer">
+                    <img src="./img/user2.jpg" alt="" class="post__footer-img">
+                    <p class="post__footer-user">Jannatul Ferdous</p>
+                    <p class="post__footer-read">
+                        Read More
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </p>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post__img post__img--3">
+                    <div class="post__tag">
+                        <span class="post__tag-cate">Drinks</span>
+                        <span class="post__tag-time">
+                            <i class="post__tag-icon fa-solid fa-clock"></i>
+                            15 Min Cook
+                        </span>
+                    </div>
+                </div>
+                <div class="post__body">
+                    <p class="post__title">The best cookie recipes to bake this weekend</p>
+                    <p class="post__text paragraph">Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit</p>
+                </div>
+                <div class="post__footer">
+                    <img src="./img/user3.jpg" alt="" class="post__footer-img">
+                    <p class="post__footer-user">Rashed Kabir</p>
+                    <p class="post__footer-read">
+                        Read More
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testi -->
+    <section class="testi">
+        <div class="container">
+            <h4 class="heading--4 text-center">Testimonials</h4>
+            <h3 class="heading--3 text-center mb-48">What People Say</h3>
+        </div>
+
+        <div class="container">
+
+            <div class="swiper testi__comment">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testi__content">
+                            <img src="./img/user1.jpg" alt="" class="testi__img mb-24">
+                            <p class="testi__title mb-16">OMG! I cannot believe. It's Awesome</p>
+                            <p class="testi__text paragraph mb-24">My new site is so much faster and easier to work with than my old site. They are here to help the customers to get their success. Nemo sit eos, quod minus eius illo labore. Pellen tesque libero ut justo, ultrices in ligula.</p>
+                            <p class="testi__user">Johson William</p>
+                            <p class="testi__role paragraph">Customer</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testi__content">
+                            <img src="./img/user2.jpg" alt="" class="testi__img mb-24">
+                            <p class="testi__title mb-16">Simply the best. Better than all the rest</p>
+                            <p class="testi__text paragraph mb-24">My new site is so much faster and easier to work with than my old site. They are here to help the customers to get their success. Nemo sit eos, quod minus eius illo labore. Pellen tesque libero ut justo, ultrices in ligula.</p>
+                            <p class="testi__user">Alexander Sakura</p>
+                            <p class="testi__role paragraph">Customer</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testi__content">
+                            <img src="./img/user3.jpg" alt="" class="testi__img mb-24">
+                            <p class="testi__title mb-16">OMG! I cannot believe. It's Awesome</p>
+                            <p class="testi__text paragraph mb-24">My new site is so much faster and easier to work with than my old site. They are here to help the customers to get their success. Nemo sit eos, quod minus eius illo labore. Pellen tesque libero ut justo, ultrices in ligula.</p>
+                            <p class="testi__user">Johson William</p>
+                            <p class="testi__role paragraph">Customer</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testi__content">
+                            <img src="./img/user4.jpg" alt="" class="testi__img mb-24">
+                            <p class="testi__title mb-16">OMG! I cannot believe. It's Awesome</p>
+                            <p class="testi__text paragraph mb-24">My new site is so much faster and easier to work with than my old site. They are here to help the customers to get their success. Nemo sit eos, quod minus eius illo labore. Pellen tesque libero ut justo, ultrices in ligula.</p>
+                            <p class="testi__user">Jujia Sakura</p>
+                            <p class="testi__role paragraph">Customer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__body grid">
+                <div class="footer__diner">
+                    <a href="#" class="nav__logo text-white mb-16">Diner</a>
+                    <p class="paragraph footer__paragraph mb-24">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet Semper at elit.</p>
+                    <div class="footer__social">
+                        <a href="" class="footer__social-logo">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="" class="footer__social-logo">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="" class="footer__social-logo">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="" class="footer__social-logo">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__links">
+                    <p class="footer__heading">Useful Links</p>
+                    <ul class="footer__list">
+                        <li><a href="" class="footer__item">About Us</a></li>
+                        <li><a href="" class="footer__item">Services</a></li>
+                        <li><a href="" class="footer__item">Blog posts</a></li>
+                        <li><a href="" class="footer__item">Careers</a></li>
+                        <li><a href="" class="footer__item">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <p class="footer__heading">More Info</p>
+                    <ul class="footer__list">
+                        <li><a href="" class="footer__item">History</a></li>
+                        <li><a href="" class="footer__item">Vision & Values</a></li>
+                        <li><a href="" class="footer__item">Awards</a></li>
+                        <li><a href="" class="footer__item">Media</a></li>
+                        <li><a href="" class="footer__item">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links footer__links--cta">
+                    <p class="footer__heading">Subscribe to our Newsletter</p>
+                    <p class="paragraph footer__paragraph">Enter your email and receive the latest news, updates and special offers from us.</p>
+                    <input type="email" placeholder="Your Email Address" class="footer__input mb-16">
+                    <a href="#" class="btn btn--orange">Subscribe Now</a>
+                </div>
+            </div>
+
+            <div class="footer__copy">
+                <p class="footer__copy-text">
+                    &copy; 2021 Diner. All rights reserved. Design by
+                    <span>W3Layouts</span>
+                </p>
+                <ul class="footer__copy-list">
+                    <li><a href="" class="footer__copy-item">Careers</a></li>
+                    <li><a href="" class="footer__copy-item">Privacy Policy</a></li>
+                    <li><a href="" class="footer__copy-item">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Number Scroller -->
+    <script src="./vendor/numscroller-gh-pages/lib/jquery-1.10.2.min.js"></script>
+    <script src="./vendor/numscroller-gh-pages/numscroller-1.0.js"></script>
+
+    <!-- Owl Carousel -->
+    <script src="./vendor/swiper/swiper.min.js"></script>
+    <script>
+        var swiperComment = new Swiper('.swiper', {
+            // spaceBetween: 10,
+            autoplay: true,
+            loop: true,
+            speed: 1000,
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+        });
+    </script>
+
+    <!-- Toggle Navbar -->
+    <script>
+        const nav = document.querySelector('.nav')
+        const btnOpenNav = nav.querySelector('.nav__bar')
+        const navBar = document.querySelector('.navbar')
+        const navBarList = navBar.querySelector('.navbar__list')
+        const btnCloseNav = navBar.querySelector('.navbar__close-box')
+
+        btnOpenNav.addEventListener('click', () => {
+            navBar.classList.add('active')
+        })
+
+        btnCloseNav.addEventListener('click', () => {
+            navBar.classList.remove('active')
+        })
+
+        navBarList.addEventListener('click', (e) => {
+            const target = e.target.closest('.navbav__item')
+            if (!target) return
+            navBar.classList.remove('active')
+        })
+
+    </script>
+
+
+</body>
+</html>
